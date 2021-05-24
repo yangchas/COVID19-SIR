@@ -253,9 +253,9 @@ def main():
 
     countries, download, startdate, predict_range , s_0, i_0, r_0 = parse_arguments()
 
-    if download:
-        data_d = load_json("./data_url.json")
-        download_data(data_d)
+    # if download:
+    #     data_d = load_json("./data_url.json")
+    #     download_data(data_d)
 
     sumCases_province('data/time_series_19-covid-Confirmed.csv', 'data/time_series_19-covid-Confirmed-country.csv')
     sumCases_province('data/time_series_19-covid-Recovered.csv', 'data/time_series_19-covid-Recovered-country.csv')
